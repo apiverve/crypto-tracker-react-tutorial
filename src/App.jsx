@@ -128,12 +128,12 @@ function App() {
                 <span className="stat-value">{formatLargeNumber(data.volume24h)}</span>
               </div>
               <div className="stat">
-                <span className="stat-label">24h High</span>
-                <span className="stat-value">{formatPrice(data.high24h)}</span>
+                <span className="stat-label">24h Change</span>
+                <span className="stat-value">{data.change24h >= 0 ? '+' : ''}{data.change24h.toFixed(2)}%</span>
               </div>
               <div className="stat">
-                <span className="stat-label">24h Low</span>
-                <span className="stat-value">{formatPrice(data.low24h)}</span>
+                <span className="stat-label">Currency</span>
+                <span className="stat-value">{data.currency}</span>
               </div>
             </div>
 
