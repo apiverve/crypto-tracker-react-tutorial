@@ -24,7 +24,7 @@ This tutorial requires an APIVerve API key. **[Sign up free](https://dashboard.a
 - Support for 8 currencies (USD, EUR, GBP, JPY, etc.)
 - 24h price change with color indicators
 - Market cap and trading volume
-- 24h high/low prices
+- Last updated timestamp
 - Auto-refresh every 60 seconds
 - Dark theme crypto-style UI
 - Built with React 18 and Vite
@@ -112,12 +112,12 @@ const response = await fetch(`${API_URL}?currency=USD`, {
   "status": "ok",
   "error": null,
   "data": {
-    "price": 67543.21,
-    "marketCap": 1325678901234,
-    "volume24h": 28456789012,
-    "change24h": 2.34,
-    "high24h": 68123.45,
-    "low24h": 66234.56
+    "currency": "USD",
+    "price": 97250.43,
+    "marketCap": 1928000000000,
+    "volume24h": 35420000000,
+    "change24h": -1.52,
+    "lastUpdated": "2026-02-07T12:00:00.000Z"
   }
 }
 ```
