@@ -4,3 +4,6 @@ dist
 .env.*.local
 *.log
 .DS_Store
+
+# Environment secrets (never commit real keys)
+.env
